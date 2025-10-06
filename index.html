@@ -1,68 +1,99 @@
-<link rel="stylesheet" href="style.css" />
 <!DOCTYPE html>
-<p>From smoky Jollof rice and spicy Suya to fluffy Puff‑Puff — home‑style flavors made fresh daily in NYC.</p>
-<a href="menu.html" class="btn primary">View Menu</a>
-</div>
-<div class="hero-art" role="img" aria-label="Jollof rice and grilled chicken hero image"></div>
-</div>
-</section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naija Bites — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header & Navigation (no JS) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Naija Bites<span>.</span></a>
 
+      <!-- Mobile menu checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
 
-<!-- Featured items -->
-<section class="section">
-<div class="container">
-<h2 class="section-title">Chef's Picks</h2>
-<div class="cards">
-<article class="card">
-<img src="https://images.unsplash.com/photo-1604908176997-4314a1b2b8e2?w=800" alt="Jollof Rice"/>
-<div class="card-body">
-<h3>Party Jollof</h3>
-<p>Smoky, tomato‑rich rice with fried plantain.</p>
-<span class="price">$14</span>
-</div>
-</article>
-<article class="card">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" alt="Suya"/>
-<div class="card-body">
-<h3>Beef Suya</h3>
-<p>Grilled skewers tossed in peanut‑spice rub.</p>
-<span class="price">$12</span>
-</div>
-</article>
-<article class="card">
-<img src="https://images.unsplash.com/photo-1564758567024-5c4f6ab5b36b?w=800" alt="Puff-Puff"/>
-<div class="card-body">
-<h3>Puff‑Puff</h3>
-<p>Golden, airy fried dough balls with sugar dust.</p>
-<span class="price">$6</span>
-</div>
-</article>
-</div>
-</div>
-</section>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" class="btn primary sm">Order Online</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="script">Nigerian Restaurant</h1>
+        <p>Smoky Jollof, spicy Suya, fluffy Puff-Puff — home-style flavors made fresh daily in NYC.</p>
+        <a href="menu.html" class="btn primary">View Menu</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Jollof rice and grilled chicken hero image"></div>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer class="site-footer">
-<div class="container footer-grid">
-<div>
-  <h4>Naija Bites</h4>
-  <p>695 Park Ave, New York, NY 10065</p>
-  <p>Mon–Sun: 11:00 – 22:00</p>
-</div>
-<div>
-<h4>Follow</h4>
-<ul class="social">
-<li><a href="#" aria-label="Facebook">Facebook</a></li>
-<li><a href="#" aria-label="Instagram">Instagram</a></li>
-<li><a href="#" aria-label="X">X</a></li>
-</ul>
-</div>
-<div>
-<h4>Contact</h4>
-<a href="contact.html" class="btn outline sm">Get in touch</a>
-</div>
-</div>
-</footer>
+  <!-- Featured items -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Chef's Picks</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1604908176997-4314a1b2b8e2?w=800&auto=format&fit=crop" alt="Jollof Rice"/>
+          <div class="card-body">
+            <h3>Party Jollof</h3>
+            <p>Smoky, tomato-rich rice with fried plantain.</p>
+            <span class="price">$14</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&auto=format&fit=crop" alt="Suya"/>
+          <div class="card-body">
+            <h3>Beef Suya</h3>
+            <p>Grilled skewers tossed in peanut-spice rub.</p>
+            <span class="price">$12</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=800&auto=format&fit=crop" alt="Puff-Puff"/>
+          <div class="card-body">
+            <h3>Puff-Puff</h3>
+            <p>Golden, airy fried dough balls with sugar dust.</p>
+            <span class="price">$6</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Naija Bites</h4>
+        <p>695 Park Ave, New York, NY 10065</p>
+        <p>Mon–Sun: 11:00 – 22:00</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="X">X</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html" class="btn outline sm">Get in touch</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
