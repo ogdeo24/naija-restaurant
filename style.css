@@ -1,0 +1,78 @@
+:root{
+.btn.primary{background:var(--accent);color:#1a1a00}
+.btn.outline{border-color:var(--accent);color:var(--accent)}
+.btn.sm{padding:8px 12px;font-size:.9rem}
+
+
+/* Mobile menu (checkbox hack) */
+@media (max-width: 720px){
+.hamburger{display:block}
+.nav{position:fixed; right:16px; top:60px; background:#0a100b; border:1px solid #1b2a1d; border-radius:12px; padding:10px; flex-direction:column; gap:10px; display:none}
+.nav-toggle:checked ~ .nav{display:flex}
+}
+
+
+/* Hero */
+.hero{background:radial-gradient(1200px 600px at 20% 20%, rgba(244,198,61,.12), transparent 60%), linear-gradient(180deg,#0c110d 0%,#0a0e0a 100%)}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;min-height:70vh;padding:32px 0}
+.hero-art{background:url('https://images.unsplash.com/photo-1604908176997-4314a1b2b8e2?w=1400') center/cover no-repeat; min-height:320px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.hero-copy p{color:var(--muted);max-width:52ch}
+
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--panel);border-radius:16px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.card-body{padding:16px}
+.price{color:var(--accent);font-weight:700}
+
+
+/* Menu */
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.menu-item{background:var(--panel);padding:16px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.2);display:flex;flex-direction:column;gap:6px}
+.table-wrap{overflow:auto;border-radius:12px;border:1px solid #223224}
+.menu-table{width:100%;border-collapse:collapse;background:var(--panel)}
+.menu-table th,.menu-table td{padding:12px 14px;border-bottom:1px solid #223224;text-align:left}
+.menu-table thead th{position:sticky;top:0;background:#162116}
+
+
+/* Scroll-snap slider */
+.snap-slider{position:relative}
+.snap-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.snap-track img{flex:0 0 100%;height:420px;object-fit:cover;scroll-snap-align:center}
+.snap-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);border:none;color:#fff;text-decoration:none;display:grid;place-items:center;font-size:28px;width:44px;height:44px;border-radius:50%}
+.snap-btn.left{left:12px}
+.snap-btn.right{right:12px}
+
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.about-img{border-radius:16px}
+
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.form-card{background:var(--panel);padding:20px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+label{display:block;margin:.6rem 0 .25rem}
+input,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #2a3a2a;background:#0e150f;color:#e7f3e9}
+input:focus,textarea:focus{outline:2px solid var(--accent)}
+
+
+/* Footer */
+.site-footer{background:#080d08;padding:28px 0;border-top:1px solid #1a2a1a}
+.footer-grid{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}
+.social{list-style:none;padding:0;margin:0;display:flex;gap:12px}
+.social a{color:var(--muted);text-decoration:none}
+
+
+/* Responsive */
+@media (max-width: 960px){
+.hero-inner{grid-template-columns:1fr}
+.cards{grid-template-columns:repeat(2,1fr)}
+.menu-grid{grid-template-columns:repeat(2,1fr)}
+.about-grid{grid-template-columns:1fr}
+.contact-grid{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+.cards,.menu-grid{grid-template-columns:1fr}
+.snap-track img{height:300px}
+}

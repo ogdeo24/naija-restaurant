@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Naija Bites — Gallery</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Naija Bites<span>.</span></a>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+<label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html" class="active">Gallery</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main class="section">
+<div class="container">
+<h1 class="section-title">Image Gallery</h1>
+
+
+<!-- Scroll-snap slider: swipe on mobile; arrows use anchor scroll -->
+<div class="snap-slider">
+<a class="snap-btn left" href="#slide-1">‹</a>
+<div class="snap-track">
+<img id="slide-1" src="https://images.unsplash.com/photo-1604908176997-4314a1b2b8e2?w=1600" alt="Jollof rice">
+<img id="slide-2" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1600" alt="Plantain">
+<img id="slide-3" src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=1600" alt="Puff‑Puff">
+<img id="slide-4" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1600" alt="Suya">
+<img id="slide-5" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600" alt="Kitchen">
+<img id="slide-6" src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?w=1600" alt="Dining room">
+</div>
+<a class="snap-btn right" href="#slide-6">›</a>
+</div>
+
+
+<p class="muted">Tip: You can swipe horizontally on mobile. This is a slider without JavaScript using CSS <em>scroll‑snap</em>.</p>
+</div>
+</main>
+
+
+<footer class="site-footer"><div class="container footer-grid"><p>© 2025 Naija Bites</p></div></footer>
+</body>
+</html>
