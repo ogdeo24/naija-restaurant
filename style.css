@@ -65,8 +65,12 @@ a{color:inherit}
 .hero-copy{max-width:48ch}
 .hero-copy p{color:var(--muted); font-size:1.05rem}
 .hero-art{
-  background:url('https://images.unsplash.com/photo-1526318472351-c75fcf070305?w=1400&auto=format&fit=crop') center/cover no-repeat;
-  min-height:340px; border-radius:16px; box-shadow:0 8px 30px rgba(0,0,0,.35)
+  /* TEMP image: Jollof-style rice plate */
+  background:url('https://images.unsplash.com/photo-1601050690597-9d37f3df1f86?w=1400&auto=format&fit=crop')
+    center/cover no-repeat;
+  min-height:340px;
+  border-radius:16px;
+  box-shadow:0 8px 30px rgba(0,0,0,.35);
 }
 
 /* CARDS */
