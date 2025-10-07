@@ -97,6 +97,17 @@ a{color:inherit}
 }
 .snap-btn.left{left:12px}
 .snap-btn.right{right:12px}
+/* Smooth scroll + nav dots for gallery */
+.snap-track{ scroll-behavior:smooth; -webkit-overflow-scrolling:touch; }
+.snap-dots{ display:flex; gap:8px; justify-content:center; margin-top:12px; }
+.snap-dots a{
+  width:10px; height:10px; border-radius:50%;
+  display:inline-block; background:#4a4f5a; text-indent:-9999px; overflow:hidden;
+  border:2px solid transparent;
+}
+.snap-dots a:hover{ background:#6b7280; }
+.snap-dots a.active, .snap-dots a:focus{ outline:none; border-color:var(--accent); background:var(--accent); }
+
 
 /* ABOUT */
 .about-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center}

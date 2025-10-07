@@ -31,16 +31,29 @@
 
 <!-- Scroll-snap slider: swipe on mobile; arrows use anchor scroll -->
 <div class="snap-slider">
-<a class="snap-btn left" href="#slide-1">‹</a>
-<div class="snap-track">
-  <img id="slide-1" src="https://niyis.co.uk/cdn/shop/articles/NIGERIAN_JOLLOF_RICE_5624df8e-b726-4d62-8a2e-44a565feb504.jpg?v=1738276335" alt="Jollof Rice">
-  <img id="slide-2" src="https://allnigerianfoods.com/wp-content/uploads/puff_puff_recipe-500x500.jpg" alt="Puff-Puff">
-  <img id="slide-3" src="https://images.squarespace-cdn.com/content/v1/614f831e90f08045038b4dae/9a18e8d0-efc6-4ca6-aa4c-656f7d53cd4e/Recipe-for-Egusi-Soup.png" alt="Egusi Soup">
-  <img id="slide-4" src="https://travelandmunchies.com/wp-content/uploads/2025/03/IMG_9666-scaled.jpg" alt="Pounded Yam">
-  <img id="slide-5" src="https://cheflolaskitchen.com/wp-content/uploads/2023/01/nigerian-suya-34-1024x717.jpg.webp" alt="Beef Suya">
-  <img id="slide-6" src="https://pulses.org/images/com_yoorecipe/422/moi-moi-rollup.jpg" alt="Moi Moi">
+  <!-- You can keep or remove these end-jump arrows -->
+  <a class="snap-btn left" href="#slide-1" aria-label="First slide">‹</a>
+
+  <div class="snap-track" aria-label="Food photo slider (swipe or use dots below)">
+    <img id="slide-1" src="https://niyis.co.uk/cdn/shop/articles/NIGERIAN_JOLLOF_RICE_5624df8e-b726-4d62-8a2e-44a565feb504.jpg?v=1738276335" alt="Jollof Rice">
+    <img id="slide-2" src="https://allnigerianfoods.com/wp-content/uploads/puff_puff_recipe-500x500.jpg" alt="Puff-Puff">
+    <img id="slide-3" src="https://images.squarespace-cdn.com/content/v1/614f831e90f08045038b4dae/9a18e8d0-efc6-4ca6-aa4c-656f7d53cd4e/Recipe-for-Egusi-Soup.png" alt="Egusi Soup">
+    <img id="slide-4" src="https://travelandmunchies.com/wp-content/uploads/2025/03/IMG_9666-scaled.jpg" alt="Pounded Yam">
+    <img id="slide-5" src="https://cheflolaskitchen.com/wp-content/uploads/2023/01/nigerian-suya-34-1024x717.jpg.webp" alt="Beef Suya">
+    <img id="slide-6" src="https://pulses.org/images/com_yoorecipe/422/moi-moi-rollup.jpg" alt="Moi Moi">
+  </div>
+
+  <a class="snap-btn right" href="#slide-6" aria-label="Last slide">›</a>
 </div>
-<a class="snap-btn right" href="#slide-6">›</a>
+
+<!-- NEW: nav dots to jump to any slide -->
+<div class="snap-dots">
+  <a href="#slide-1" aria-label="Jollof">1</a>
+  <a href="#slide-2" aria-label="Puff-Puff">2</a>
+  <a href="#slide-3" aria-label="Egusi Soup">3</a>
+  <a href="#slide-4" aria-label="Pounded Yam">4</a>
+  <a href="#slide-5" aria-label="Beef Suya">5</a>
+  <a href="#slide-6" aria-label="Moi Moi">6</a>
 </div>
 
 
