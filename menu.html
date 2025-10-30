@@ -1,59 +1,113 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naija Bites — Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="index.html">Naija Bites<span>.</span></a>
-<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-<label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="menu.html" class="active">Menu</a>
-<a href="gallery.html">Gallery</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</div>
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Naija Bites<span>.</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-
 <main class="section">
-<div class="container">
-<h1 class="section-title">Our Menu</h1>
+  <div class="container">
+    <h1 class="section-title">Our Menu</h1>
 
+    <!-- Menu as cards -->
+    <div class="menu-grid">
+      <!--  Each menu-item now includes an "Add to Cart" button with data attributes -->
+      <div class="menu-item">
+        <h3>Party Jollof</h3>
+        <p>Smoky tomato rice + plantain</p>
+        <span class="price">$14</span>
+        <button class="add-to-cart" data-name="Party Jollof" data-price="14">Add to Cart</button>
+      </div>
 
-<!-- Menu as cards -->
-<div class="menu-grid">
-<div class="menu-item"><h3>Party Jollof</h3><p>Smoky tomato rice + plantain</p><span class="price">$14</span></div>
-<div class="menu-item"><h3>Beef Suya</h3><p>Grilled skewers, suya spice</p><span class="price">$12</span></div>
-<div class="menu-item"><h3>Egusi Soup</h3><p>Melon seed stew, spinach</p><span class="price">$15</span></div>
-<div class="menu-item"><h3>Pounded Yam</h3><p>Served with choice of soup</p><span class="price">$6</span></div>
-<div class="menu-item"><h3>Moi‑Moi</h3><p>Steamed bean pudding</p><span class="price">$8</span></div>
-<div class="menu-item"><h3>Puff‑Puff</h3><p>Fried dough balls</p><span class="price">$6</span></div>
-</div>
+      <div class="menu-item">
+        <h3>Beef Suya</h3>
+        <p>Grilled skewers, suya spice</p>
+        <span class="price">$12</span>
+        <button class="add-to-cart" data-name="Beef Suya" data-price="12">Add to Cart</button>
+      </div>
 
+      <div class="menu-item">
+        <h3>Egusi Soup</h3>
+        <p>Melon seed stew, spinach</p>
+        <span class="price">$15</span>
+        <button class="add-to-cart" data-name="Egusi Soup" data-price="15">Add to Cart</button>
+      </div>
 
-<!-- Table view (to satisfy requirement) -->
-<h2 class="mt-lg">Menu (Table View)</h2>
-<div class="table-wrap">
-<table class="menu-table" aria-label="Menu table with prices">
-<thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
-<tbody>
-<tr><td>Party Jollof</td><td>Smoky tomato rice + plantain</td><td>$14</td></tr>
-<tr><td>Beef Suya</td><td>Grilled skewers, suya spice</td><td>$12</td></tr>
-<tr><td>Egusi Soup</td><td>Melon seed stew, spinach</td><td>$15</td></tr>
-<tr><td>Pounded Yam</td><td>Paired with soup</td><td>$6</td></tr>
-<tr><td>Moi‑Moi</td><td>Steamed bean pudding</td><td>$8</td></tr>
-<tr><td>Puff‑Puff</td><td>Fried dough balls</td><td>$6</td></tr>
-</tbody>
-</table>
-</div>
-</div>
+      <div class="menu-item">
+        <h3>Pounded Yam</h3>
+        <p>Served with choice of soup</p>
+        <span class="price">$6</span>
+        <button class="add-to-cart" data-name="Pounded Yam" data-price="6">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Moi-Moi</h3>
+        <p>Steamed bean pudding</p>
+        <span class="price">$8</span>
+        <button class="add-to-cart" data-name="Moi-Moi" data-price="8">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Puff-Puff</h3>
+        <p>Fried dough balls</p>
+        <span class="price">$6</span>
+        <button class="add-to-cart" data-name="Puff-Puff" data-price="6">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Table view (to satisfy requirement) -->
+    <h2 class="mt-lg">Menu (Table View)</h2>
+    <div class="table-wrap">
+      <table class="menu-table" aria-label="Menu table with prices">
+        <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Party Jollof</td><td>Smoky tomato rice + plantain</td><td>$14</td></tr>
+          <tr><td>Beef Suya</td><td>Grilled skewers, suya spice</td><td>$12</td></tr>
+          <tr><td>Egusi Soup</td><td>Melon seed stew, spinach</td><td>$15</td></tr>
+          <tr><td>Pounded Yam</td><td>Paired with soup</td><td>$6</td></tr>
+          <tr><td>Moi-Moi</td><td>Steamed bean pudding</td><td>$8</td></tr>
+          <tr><td>Puff-Puff</td><td>Fried dough balls</td><td>$6</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Shopping Cart Section -->
+    <section id="cart" class="cart-section">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+      <button id="clear-cart">Clear Cart</button>
+    </section>
+
+  </div>
 </main>
 
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2025 Naija Bites</p>
+  </div>
+</footer>
 
-<footer class="site-footer"><div class="container footer-grid"><p>© 2025 Naija Bites</p></div></footer>
+<!-- JavaScript file link  -->
+<script src="cart.js"></script>
+
 </body>
 </html>
