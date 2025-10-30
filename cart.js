@@ -1,6 +1,8 @@
 // cart.js — handles add/remove/display of cart items
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+const cartCount = document.getElementById("cart-count");
+
 
 // Elements
 const cartList = document.getElementById("cart-items");
@@ -54,6 +56,12 @@ function updateCart() {
     `;
     cartList.appendChild(li);
   });
+
+  // Update cart count in header
+    if (cartCount) {
+        const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = itemCount;
+    }
 
   totalDisplay.textContent = total.toFixed(2);
   localStorage.setItem("cart", JSON.stringify(cart));
