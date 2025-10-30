@@ -67,5 +67,17 @@ function updateCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+// Scroll to cart section when the cart icon is clicked
+const cartIcon = document.getElementById("cart-icon");
+if (cartIcon) {
+  cartIcon.addEventListener("click", () => {
+    const cartSection = document.getElementById("cart");
+    if (cartSection) {
+      cartSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+}
+
+
 // Initial render on page load
 updateCart();

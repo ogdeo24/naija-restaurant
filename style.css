@@ -222,3 +222,6 @@ button.add-to-cart:hover, .remove-btn:hover, #clear-cart:hover {
     top: 18px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
