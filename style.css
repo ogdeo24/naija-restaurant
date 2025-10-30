@@ -78,6 +78,19 @@ a{color:inherit}
 .card-body{padding:16px}
 .price{color:var(--accent); font-weight:700}
 
+.card img {
+  width: 100%;
+  height: 250px;          /* fixed consistent height */
+  object-fit: cover;      /* crop edges but keep proportions */
+  display: block;
+}
+
+.snap-track img {
+  height: 400px;        /* increase for larger display */
+  object-fit: cover;
+}
+
+
 /* MENU PAGE */
 .menu-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
 .menu-item{background:var(--panel); padding:16px; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,.2); display:flex; flex-direction:column; gap:6px}
