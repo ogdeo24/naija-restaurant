@@ -102,7 +102,15 @@ a{color:inherit}
 /* GALLERY SLIDER (CSS scroll-snap) */
 .snap-slider{position:relative}
 .snap-track{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,.25)}
-.snap-track img{flex:0 0 100%; height:420px; object-fit:cover; scroll-snap-align:center}
+.snap-track img {
+  flex: 0 0 100%;
+  height: auto;                 /* allow natural height */
+  max-height: 500px;            /* limit size for consistency */
+  object-fit: contain;          /* show full image without cropping */
+  background: #000;             /* subtle black background for padding edges */
+  scroll-snap-align: center;
+}
+
 .snap-btn{
   position:absolute; top:50%; transform:translateY(-50%);
   background:rgba(0,0,0,.45); color:#fff; text-decoration:none;
